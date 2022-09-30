@@ -14,6 +14,6 @@ void loop() {
   if (guard_timer.available()) {
 	guard_timer.stop();
 	//Send alert that timer elapsed
-	guard_timer.start();
+	guard_timer.start(5000);
   }
 }

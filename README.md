@@ -19,7 +19,7 @@ This library was created make it a little bit easier to monitor elapsed time.
       if (timer.available()) {
         timer.stop();
         //Do something
-        timer.start();
+        timer.start(5000);
       }
     }
 	
@@ -43,7 +43,7 @@ You need to remember that after stoping a timer, a full start is needed.
       if (guard_timer.available()) {
         guard_timer.stop();
         //Send alert that timer elapsed
-        guard_timer.start();
+        guard_timer.start(5000);
       }
     }
 

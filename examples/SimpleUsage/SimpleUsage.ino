@@ -10,6 +10,6 @@ void loop() {
   if (timer.available()) {
     timer.stop();
     //Do something
-    timer.restart();
+    timer.start(5000);
   }
 }
