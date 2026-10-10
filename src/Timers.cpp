@@ -19,3 +19,7 @@ bool Timers::available() {
 	}
 	return millis() >= _destTime;
 }
+
+bool Timers::running() {
+	return ((_waitTime != 0) && (millis() < _destTime));
+}

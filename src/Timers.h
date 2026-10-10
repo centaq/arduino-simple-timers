@@ -12,10 +12,11 @@ class Timers
 	void start(uint32_t waitTime);
 	void restart();
 	void stop();
-	bool available();	
+	bool available();
+	bool running();
 	
   private:
-	uint32_t _waitTime;
-	uint32_t _destTime;
+	uint32_t _waitTime = 0;
+	uint32_t _destTime = 0;
 };
 #endif
